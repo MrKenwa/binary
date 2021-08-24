@@ -27,8 +27,8 @@
 							<p class="mainblock__subtitle">for your app, logo, website</p>
 						</div>
 						<div class="mainblock__footer">
-							<a href="" class="mainblock__btn btn btn_w">READ MORE</a>
-							<a href="" class="mainblock__arrow">
+							<a href="#" class="mainblock__btn btn btn_w">READ MORE</a>
+							<a href="#" class="mainblock__arrow">
 								<img src="img/icons/arrow-down.png" alt="arrow">
 							</a>
 						</div>
@@ -38,14 +38,14 @@
 			<div class="content">
 				<div class="menu">
 					<div class="container">
-						<div class="menu__items">
+						<nav class="menu__items">
 							<ul class="menu__list">
-								<li><a href="#" class="menu__link menu__link_act">Home</a></li>
-								<li><a href="#" class="menu__link">About us</a></li>
-								<li><a href="#" class="menu__link">Portfolio</a></li>
-								<li><a href="#" class="menu__link">Contact</a></li>
+								<li class="menu__link menu__link_act">Home</li>
+								<li class="menu__link">About us</li>
+								<li class="menu__link">Portfolio</li>
+								<li class="menu__link">Contact</li>
 							</ul>
-						</div>
+						</nav>
 					</div>
 				</div>
 				<div class="about">
@@ -84,7 +84,7 @@
 								</div>
 								<div class="about__column">
 									<div class="about__item">
-										<div class="item__image">
+										<div class="item__image item_l">
 											<img src="img/about/layer-25.png" alt="">
 										</div>
 										<div class="item__title">MARKETING</div>
@@ -102,34 +102,56 @@
 						<div class="portfolio__body">
 							<div class="portfolio__header">
 								<div class="portfolio__title title">PORTFOLIO</div>
-								<div class="portfolio__menu">
-									<ul class="menu__items">
-										<li><a href="#" class="menu__item menu__item_act">ALL</a></li>
-										<li><a href="#" class="menu__item">WEB</a></li>
-										<li><a href="#" class="menu__item">APPS</a></li>
-										<li><a href="#" class="menu__item">OTHER</a></li>
+								<nav class="portfolio__menu ">
+									<ul class="menu__items filter">
+										<li data-filter="1" class="menu__item active">ALL</li>
+										<li data-filter="2" class="menu__item">WEB</li>
+										<li data-filter="3" class="menu__item">APPS</li>
+										<li data-filter="4" class="menu__item">OTHER</li>
 									</ul>
-								</div>
+								</nav>
 							</div>
 							<div class="portfolio__items">
-								<a class="portfolio__item">
-									<img src="img/portfolio/background.png" alt="portfolio__item">
-								</a>
-								<a class="portfolio__item">
-									<img src="img/portfolio/background.png" alt="portfolio__item">
-								</a>
-								<a class="portfolio__item">
-									<img src="img/portfolio/background.png" alt="portfolio__item">
-								</a>
-								<a class="portfolio__item">
-									<img src="img/portfolio/background.png" alt="portfolio__item">
-								</a>
-								<a class="portfolio__item">
-									<img src="img/portfolio/background.png" alt="portfolio__item">
-								</a>
-								<a class="portfolio__item">
-									<img src="img/portfolio/background.png" alt="portfolio__item">
-								</a>
+								<div class="portfolio__column f_2">
+									<a class="portfolio__item">
+										<img src="img/portfolio/background.png" alt="portfolio__item">
+									</a>
+								</div>
+								<div class="portfolio__column f_2">
+									<a class="portfolio__item">
+										<img src="img/portfolio/background.png" alt="portfolio__item">
+									</a>
+								</div>
+								<div class="portfolio__column f_2">
+									<a class="portfolio__item">
+										<img src="img/portfolio/background.png" alt="portfolio__item">
+									</a>
+								</div>
+								<div class="portfolio__column f_3">
+									<a class="portfolio__item">
+										<img src="img/portfolio/background.png" alt="portfolio__item">
+									</a>
+								</div>
+								<div class="portfolio__column f_4">
+									<a class="portfolio__item">
+										<img src="img/portfolio/background.png" alt="portfolio__item">
+									</a>
+								</div>
+								<div class="portfolio__column f_4">
+									<a class="portfolio__item">
+										<img src="img/portfolio/background.png" alt="portfolio__item">
+									</a>
+								</div>
+								<div class="portfolio__column f_4">
+									<a class="portfolio__item">
+										<img src="img/portfolio/background.png" alt="portfolio__item">
+									</a>
+								</div>
+								<div class="portfolio__column f_4">
+									<a class="portfolio__item">
+										<img src="img/portfolio/background.png" alt="portfolio__item">
+									</a>
+								</div>
 							</div>
 							<div class="portfolio__footer">
 								<a href="#" class="portfolio__btn btn btn_bl">READ MORE</a>
@@ -167,18 +189,18 @@
 								<form class="form">
 									<div class="form__name form__input">
 										<p class="form__text">YOUR NAME</p>
-										<input tabindex="1" name="username" type="text"/>
+										<input autocomplete="off" tabindex="1" name="form[]" data-value="" type="text"/>
 									</div>
 									<div class="form__email form__input">
 										<p class="form__text">YOUR E-MAIL</p>
-										<input tabindex="2" name="useremail" type="text"/>
+										<input autocomplete="off" tabindex="2" name="form[]" data-value="" type="text"/>
 									</div>
 									<div class="form__message">
 										<p class="form__text">MESSAGE</p>
 										<textarea tabindex="3" name="text"></textarea>
 									</div>
 									<div class="form__send">
-										<button tabindex="4" type="submit" class="form__text form__text_send">SEND</button>
+										<button tabindex="4" type="submit" class="btn btn_bl">SEND</button>
 									</div>
 								</form>
 								<div class="contact__text">
@@ -196,7 +218,7 @@
 										</a>
 									</div>
 									<div class="text__email">
-										e-mail: <span>postma.elena@gmail.com</span>
+										e-mail: <a href="mailto:postma.elena@gmail.com"><span>postma.elena@gmail.com</span></a>
 									</div>
 								</div>
 							</div>

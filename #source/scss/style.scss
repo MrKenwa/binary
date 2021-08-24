@@ -48,26 +48,12 @@ $md4:479.98;
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
 @import "nullstyle.scss";
+@import "form.scss";
+@import "main.scss";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
 
 
 
-.wrapper {
-	@include flexbox();
-	flex-direction: column;
-	min-height: 100vh;
-}
-
-body {
-	font-family: 'Lato', sans-serif;
-}
-
-.container {
-	max-width: 1100px;
-	@include flexbox();
-	justify-content: center;
-	align-items: center;
-}
 
 .mainblock {
 	@include flexbox();
@@ -147,22 +133,7 @@ body {
 		flex-direction: column;
 	}
 }
-
-.btn_w {
-	color: white;
-	border: solid 1px white;
-}
-
-.btn {
-	display: inline-block;
-	font-size: 15.5px;
-	padding: 0px 42px;
-	height: 47px;
-	line-height: 44px;
-	text-transform: uppercase;
-	font-size: 16px;
-	letter-spacing: 0.6px;
-}
+//=================================================================================================================
 
 .menu {
 	box-shadow: 0.5px 0.9px 0 0 rgba(0, 0, 0, 0.05);
@@ -196,6 +167,7 @@ body {
 	}
 	&__link_act {
 		color: #ada074;
+		font-weight: 700;
 	}
 }
 
@@ -223,6 +195,8 @@ body {
 	}
 
 }
+//=================================================================================================================
+
 .about {
 	@include flexbox();
 	padding: 85px 0px 95px;
@@ -320,6 +294,13 @@ body {
 		border: solid 4px #f2f2f2;
 	}
 }
+.item_l {
+	img {
+		position: relative;
+		left:5px;
+	}
+}
+//=================================================================================================================
 
 .portfolio {
 	background: #f7f4f4;
@@ -354,21 +335,6 @@ body {
 			margin: 0px 0px 20px 0px;
 		}	
 	}
-	.btn_bl {
-		border: solid 1px #000;
-		color: #000;
-		&:hover {
-			color: rgba(5, 21, 34, 0.521);
-			border: solid 1px rgba(5, 21, 34, 0.521);
-		}
-		&:active {
-			color: rgba(0, 1, 5, 0.541);
-			border: solid 1px rgba(0, 1, 5, 0.541);
-			position: relative;
-			top: 3px;
-			box-shadow: 2px rgba(0, 0, 0,0.5);
-		}
-	}
 	&__menu {
 		max-width: 300px;
 	}
@@ -385,9 +351,6 @@ body {
 	.menu__item {
 		font-size: 15px;
 		color: #3c3c3c;
-		&_act {
-			color: #ada074;
-		}
 		&:hover {
 			font-weight: 900;
 		}
@@ -396,15 +359,19 @@ body {
 			top: 2px;
 		}
 	}
+	.active {
+		color: #ada074;
+		font-weight: 700;
+	}
 	&__items {
 		@include flexbox();
 		flex-wrap: wrap;
-		margin: -8px 0px;
+		margin: -8px -10px;
 	}
-	&__item {
-		flex: 0 0 50%;
+	&__column {
 		@include flexbox();
-		padding: 8px 0px;
+		flex: 0 0 50%;
+		padding: 8px 10px;
 		@media screen and (max-width:1100px) {
 			flex: 0 1 100%;
 			justify-content: center;
@@ -420,6 +387,7 @@ body {
 		}
 	}
 }
+//=================================================================================================================
 
 .partners {
 	background: url(../img/partners/partner_bg.png) center/cover no-repeat;
@@ -464,6 +432,7 @@ body {
 		}
 	}
 }
+//=================================================================================================================
 
 .contact {
 	padding: 80px 0px;
@@ -529,33 +498,12 @@ body {
 		@media screen and (max-width:410px) {
 			text-align: center;
 		}
-		&_send {
-			@media screen and (max-width:410px) {
-				font-size: 20px;
-			}	
-		}
 	}
 	input {
-		max-width: 161px;
-		height: 35px;
-		width: 100%;
-		background-color: #f8f7f7;
-		border-top: solid 1px #000;
 		flex: 0 0 50%;
-		padding: 10px;
-		font-family: 'Lato';
-		font-size: 16px;
 	}
 	textarea {
-		width: 100%;
-		height: 118px;
-		background-color: #f8f7f7;
-		border-top: solid 1px #000;
-		resize: none;
 		flex: 0 0 100%;
-		padding: 10px;
-		font-family: 'Lato';
-		font-size: 16px;
 		@media screen and (max-width:410px) {
 			max-width: 200px;
 			height: 90px;
@@ -565,10 +513,6 @@ body {
 		margin: 30px 0px 0px auto;
 		@media screen and (max-width:410px) {
 			margin: 15px auto;
-		}
-		&:active {
-			position: relative;
-			top: 2px;
 		}
 	}
 	&__message {
@@ -603,6 +547,10 @@ body {
 		margin: 0px 0px 20px 0px;
 	}
 	.text__email{
+		a {
+			color: #1e1e1e;
+			text-decoration: none;
+		}
 		span {
 			font-weight: bold;
 		}
@@ -629,6 +577,8 @@ body {
 		}
 	}
 }
+
+//=================================================================================================================
 
 .footer {
 	background: #3c3c3c;
@@ -662,6 +612,9 @@ body {
 		@media screen and (max-width:$md3+px) , screen and (max-height: 300px) {
 			font-size: 16px;
 		}
+		&:active {
+			color: white;
+		}
 	}
 	&__text {
 		font-family: 'MyriadPro';
@@ -670,3 +623,4 @@ body {
 		line-height: 13px;
 	}
 }
+//=================================================================================================================
