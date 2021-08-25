@@ -47,9 +47,9 @@ $md4:479.98;
 //</ОСНОВНАЯ СЕТКА>
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
-@import "nullstyle.scss";
-@import "form.scss";
-@import "main.scss";
+@import "_nullstyle";
+@import "_forms";
+@import "_main";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
 
 
@@ -62,6 +62,14 @@ $md4:479.98;
 	padding: 50px 0;
 	@media screen and (max-width:$md3+px) , screen and (max-height: 600px) {
 		padding: 20px 0px;
+	}
+	&__logo {
+		img {
+			transition: 1.2s;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
 	}
 	&__content {
 		flex: 1 1 auto;
@@ -119,6 +127,7 @@ $md4:479.98;
 		&:hover {
 			color: rgba(11, 134, 235, 0.521);
 			border: solid 1px rgba(11, 209, 235, 0.521);
+			border-radius: 15%;
 		}
 		&:active {
 			color: rgba(11, 33, 235, 0.521);
@@ -131,6 +140,18 @@ $md4:479.98;
 	&__footer {
 		@include flexboxinline();
 		flex-direction: column;
+	}
+	&__arrow {
+		animation: arrow 1s ease-in-out infinite alternate 0s;
+		position: relative;
+	}
+	@keyframes arrow {
+		0% {
+			top: 0%;
+		}
+		100% {
+			top: 50%;
+		}
 	}
 }
 //=================================================================================================================
@@ -293,6 +314,12 @@ $md4:479.98;
 	&::active {
 		border: solid 4px #f2f2f2;
 	}
+	img {
+		transition: 1.2s;
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
 }
 .item_l {
 	img {
@@ -378,6 +405,10 @@ $md4:479.98;
 		}
 		img {
 			max-width: 100%;
+			transition: 1.2s;
+			&:hover {
+				transform: scale(1.1);
+			}
 		}
 	}
 	&__footer {
@@ -422,6 +453,12 @@ $md4:479.98;
 	}
 	&__logo {
 		text-align: center;
+		img {
+			transition: 1.2s;
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
 		@media screen and (max-width:500px) {
 			flex: 0 0 50%;
 			padding: 0px 0px 20px 0px;
@@ -582,7 +619,14 @@ $md4:479.98;
 
 .footer {
 	background: #3c3c3c;
-	
+	&__logo {
+		img {
+			transition: 1.2s;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
 	&__body {
 		max-width: 260px;
 		width: 100%;
@@ -595,7 +639,6 @@ $md4:479.98;
 		@media screen and (max-width:$md3+px) , screen and (max-height: 300px) {
 			padding: 20px 0px;
 		}
-
 	}
 	&__menu {
 		margin: 30px 0px;

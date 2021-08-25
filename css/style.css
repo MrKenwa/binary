@@ -184,11 +184,15 @@ body {
 .btn_w {
   color: white;
   border: solid 1px white;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
 .btn_bl {
   border: solid 1px #000;
   color: #000;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
 .btn_bl:hover {
@@ -219,6 +223,16 @@ body {
   .mainblock {
     padding: 20px 0px;
   }
+}
+
+.mainblock__logo img {
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+.mainblock__logo img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .mainblock__content {
@@ -307,6 +321,7 @@ body {
 .mainblock__btn:hover {
   color: rgba(11, 134, 235, 0.521);
   border: solid 1px rgba(11, 209, 235, 0.521);
+  border-radius: 15%;
 }
 
 .mainblock__btn:active {
@@ -329,6 +344,30 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.mainblock__arrow {
+  -webkit-animation: arrow 1s ease-in-out infinite alternate 0s;
+          animation: arrow 1s ease-in-out infinite alternate 0s;
+  position: relative;
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 50%;
+  }
 }
 
 .menu {
@@ -586,6 +625,16 @@ body {
   border: solid 4px #f2f2f2;
 }
 
+.item__image img {
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+.item__image img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .item_l img {
   position: relative;
   left: 5px;
@@ -736,6 +785,13 @@ body {
 
 .portfolio__column img {
   max-width: 100%;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+.portfolio__column img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .portfolio__footer {
@@ -808,6 +864,16 @@ body {
 
 .partners__logo {
   text-align: center;
+}
+
+.partners__logo img {
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+.partners__logo img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @media screen and (max-width: 500px) {
@@ -1076,6 +1142,16 @@ body {
 
 .footer {
   background: #3c3c3c;
+}
+
+.footer__logo img {
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+.footer__logo img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .footer__body {
