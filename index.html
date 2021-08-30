@@ -27,8 +27,8 @@
 							<p class="mainblock__subtitle">for your app, logo, website</p>
 						</div>
 						<div class="mainblock__footer">
-							<a href="#" class="mainblock__btn btn btn_w">READ MORE</a>
-							<a href="#" class="mainblock__arrow">
+							<a data-goto=".about" href="#" class="mainblock__btn btn btn_w btn_scroll">READ MORE</a>
+							<a data-goto=".about" href="#" class="mainblock__arrow btn_scroll">
 								<img src="img/icons/arrow-down.png" alt="arrow">
 							</a>
 						</div>
@@ -40,10 +40,10 @@
 					<div class="container">
 						<nav class="menu__items">
 							<ul class="menu__list">
-								<li class="menu__link menu__link_act">Home</li>
-								<li class="menu__link">About us</li>
-								<li class="menu__link">Portfolio</li>
-								<li class="menu__link">Contact</li>
+								<li><a data-goto=".mainblock" href="" class="menu__link menu__link_act">Home</a></li>
+								<li><a data-goto=".about" href="" class="menu__link">About us</a></li>
+								<li><a data-goto=".portfolio" href="" class="menu__link">Portfolio</a></li>
+								<li><a data-goto=".contact" href="" class="menu__link">Contact</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -245,5 +245,7 @@
 				</div>
 			</footer>
 		</div>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
