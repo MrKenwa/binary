@@ -2,250 +2,292 @@
 <!DOCTYPE html>
 <!-- Оболочка документа, указываем язык содержимого -->
 <html lang="ru">
-	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
-	<head>
-		<!-- Заголовок страницы в браузере -->
-		<title>Binary</title>
-		<!-- Подключаем CSS -->
-		<link rel="stylesheet" href="css/style.css" />
-		<!-- Кодировка страницы -->
-		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-		<!-- Ширина дисплея пользователя -->
-		<meta name="viewport" content="width=device-width">
-	</head>
-	<!-- Отображаемое тело страницы -->
-	<body>
-		<div class="wrapper">
-			<div class="mainblock">
-				<div class="mainblock__content">
-					<div class="container">
-						<a href="#" class="mainblock__logo">
-							<img src="img/mainblock/layer-33-copy-2.png" alt="mainblock__logo">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+	<!-- Заголовок страницы в браузере -->
+	<title>Binary</title>
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="/css/style.css" />
+	<!-- Кодировка страницы -->
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<!-- Ширина дисплея пользователя -->
+	<meta name="viewport" content="width=device-width">
+</head>
+<!-- Отображаемое тело страницы -->
+
+<body>
+	<div class="wrapper">
+		<div class="mainblock">
+			<div class="mainblock__content">
+				<div class="container">
+					<a href="#" class="mainblock__logo">
+						<img src="img/mainblock/layer-33-copy-2.png" alt="mainblock__logo">
+					</a>
+					<div class="mainblock__text">
+						<p class="mainblock__title">Clear, smart, attractive design</p>
+						<p class="mainblock__subtitle">for your app, logo, website</p>
+					</div>
+					<div class="mainblock__footer">
+						<a data-goto=".about" href="#" class="mainblock__btn btn btn_w btn_scroll">READ MORE</a>
+						<a data-goto=".about" href="#" class="mainblock__arrow btn_scroll">
+							<img src="img/icons/arrow-down.png" alt="arrow">
 						</a>
-						<div class="mainblock__text">
-							<p class="mainblock__title">Clear, smart, attractive design</p> 
-							<p class="mainblock__subtitle">for your app, logo, website</p>
-						</div>
-						<div class="mainblock__footer">
-							<a data-goto=".about" href="#" class="mainblock__btn btn btn_w btn_scroll">READ MORE</a>
-							<a data-goto=".about" href="#" class="mainblock__arrow btn_scroll">
-								<img src="img/icons/arrow-down.png" alt="arrow">
-							</a>
-						</div>
 					</div>
 				</div>
 			</div>
-			<div class="content">
-				<div class="menu">
-					<div class="container">
-						<nav class="menu__items">
+		</div>
+		<div class="content">
+			<div class="menu">
+				<div class="container">
+					<div class="menu__icon">
+						<span></span>
+					</div>
+					<nav class="menu__items">
+						<div class="menu__body">
 							<ul class="menu__list">
 								<li><a data-goto=".mainblock" href="" class="menu__link menu__link_act">Home</a></li>
 								<li><a data-goto=".about" href="" class="menu__link">About us</a></li>
 								<li><a data-goto=".portfolio" href="" class="menu__link">Portfolio</a></li>
 								<li><a data-goto=".contact" href="" class="menu__link">Contact</a></li>
+								<li>
+									<button class="menu__themes-button">
+										<span>Switch to dark theme</span>
+										<span>Switch to light theme</span>
+									</button>
+								</li>
 							</ul>
-						</nav>
-					</div>
+						</div>
+					</nav>
 				</div>
-				<div class="about">
-					<div class="container">
-						<div class="about__body">
-							<div class="about__header">
-								<div class="about__title title">ABOUT</div>
-								<div class="about__text">
-									<p>We specialize in contemporary, functional, and stunning websites with design that really brings that "WOW" factor.</p>
-									<p>In our design process, we make sure to stay one step ahead of the latest trends,</p>
-									<p>never forgetting to abide by key web standards.</p>
-								</div>
+			</div>
+			<div class="about">
+				<div class="container">
+					<div class="about__body">
+						<div class="about__header">
+							<div class="about__title title">ABOUT</div>
+							<div class="about__text">
+								<p>We specialize in contemporary, functional, and stunning websites with design that really
+									brings that "WOW" factor.</p>
+								<p>In our design process, we make sure to stay one step ahead of the latest trends,</p>
+								<p>never forgetting to abide by key web standards.</p>
 							</div>
-							<div class="about__content">
-								<div class="about__column">
-									<div class="about__item">
-										<div class="item__image">
-											<img src="img/about/layer-24.png" alt="">
-										</div>
-										<div class="item__title">WEB</div>
-										<div class="item__text"><p>We tend to deliver unique and</p>
-											<p>functional design, through</p>
-											<p>innovation and creativity.</p></div>
+						</div>
+						<div class="about__content">
+							<div class="about__column">
+								<div class="about__item">
+									<div class="item__image">
+										<img src="img/about/layer-24.png" alt="">
+									</div>
+									<div class="item__title">WEB</div>
+									<div class="item__text">
+										<p>We tend to deliver unique and</p>
+										<p>functional design, through</p>
+										<p>innovation and creativity.</p>
 									</div>
 								</div>
-								<div class="about__column">
-									<div class="about__item">
-										<div class="item__image">
-											<img src="img/about/layer-23.png" alt="">
-										</div>
+							</div>
+							<div class="about__column">
+								<div class="about__item">
+									<div class="item__image">
+										<img src="img/about/layer-23.png" alt="">
+									</div>
 									<div class="item__title">iOS AND ANDROID</div>
-									<div class="item__text">We seek to bring new businesses and 
-										customers closer together through valuable 
+									<div class="item__text">We seek to bring new businesses and
+										customers closer together through valuable
 										insights and proper targeting.</div>
-									</div>
-								</div>
-								<div class="about__column">
-									<div class="about__item">
-										<div class="item__image item_l">
-											<img src="img/about/layer-25.png" alt="">
-										</div>
-										<div class="item__title">MARKETING</div>
-										<div class="item__text">We’ll help you establish the right goals 
-											and build the right paths. Success depends 
-											on setting the right intention.</div>
-									</div>
 								</div>
 							</div>
-						</div>	
-					</div>
-				</div>
-				<div class="portfolio">
-					<div class="container">
-						<div class="portfolio__body">
-							<div class="portfolio__header">
-								<div class="portfolio__title title">PORTFOLIO</div>
-								<nav class="portfolio__menu ">
-									<ul class="menu__items filter">
-										<li data-filter="1" class="menu__item active">ALL</li>
-										<li data-filter="2" class="menu__item">WEB</li>
-										<li data-filter="3" class="menu__item">APPS</li>
-										<li data-filter="4" class="menu__item">OTHER</li>
-									</ul>
-								</nav>
-							</div>
-							<div class="portfolio__items">
-								<div class="portfolio__column f_2">
-									<a class="portfolio__item">
-										<img src="img/portfolio/background.png" alt="portfolio__item">
-									</a>
-								</div>
-								<div class="portfolio__column f_2">
-									<a class="portfolio__item">
-										<img src="img/portfolio/background.png" alt="portfolio__item">
-									</a>
-								</div>
-								<div class="portfolio__column f_2">
-									<a class="portfolio__item">
-										<img src="img/portfolio/background.png" alt="portfolio__item">
-									</a>
-								</div>
-								<div class="portfolio__column f_3">
-									<a class="portfolio__item">
-										<img src="img/portfolio/background.png" alt="portfolio__item">
-									</a>
-								</div>
-								<div class="portfolio__column f_4">
-									<a class="portfolio__item">
-										<img src="img/portfolio/background.png" alt="portfolio__item">
-									</a>
-								</div>
-								<div class="portfolio__column f_4">
-									<a class="portfolio__item">
-										<img src="img/portfolio/background.png" alt="portfolio__item">
-									</a>
-								</div>
-								<div class="portfolio__column f_4">
-									<a class="portfolio__item">
-										<img src="img/portfolio/background.png" alt="portfolio__item">
-									</a>
-								</div>
-								<div class="portfolio__column f_4">
-									<a class="portfolio__item">
-										<img src="img/portfolio/background.png" alt="portfolio__item">
-									</a>
-								</div>
-							</div>
-							<div class="portfolio__footer">
-								<a href="#" class="portfolio__btn btn btn_bl">READ MORE</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="partners">
-					<div class="container">
-						<div class="partners__body">
-							<div class="partners__title">Our partners</div>
-							<div class="partners__company">
-								<a href="#" class="partners__logo">
-									<img src="img/partners/logo-2.png" alt="">
-								</a>
-								<a href="#" class="partners__logo">
-									<img src="img/partners/archiq.png" alt="">
-								</a>
-								<a href="#" class="partners__logo">
-									<img src="img/partners/thomsoon.png" alt="">
-								</a>
-								<a href="#" class="partners__logo">
-									<img src="img/partners/alex.png" alt="">
-								</a>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-				<div class="contact">
-					<div class="container">
-						<div class="contact__body">
-							<div class="contact__title title">CONTACT</div>
-							<div class="contact__content">
-								<form class="form">
-									<div class="form__name form__input">
-										<p class="form__text">YOUR NAME</p>
-										<input autocomplete="off" tabindex="1" name="form[]" data-value="" type="text"/>
+							<div class="about__column">
+								<div class="about__item">
+									<div class="item__image item_l">
+										<img src="img/about/layer-25.png" alt="">
 									</div>
-									<div class="form__email form__input">
-										<p class="form__text">YOUR E-MAIL</p>
-										<input autocomplete="off" tabindex="2" name="form[]" data-value="" type="text"/>
-									</div>
-									<div class="form__message">
-										<p class="form__text">MESSAGE</p>
-										<textarea tabindex="3" name="text"></textarea>
-									</div>
-									<div class="form__send">
-										<button tabindex="4" type="submit" class="btn btn_bl">SEND</button>
-									</div>
-								</form>
-								<div class="contact__text">
-									<div class="text__idea"><p>Have an idea for a project? Just looking to 
-										explore and see the possibilities?</p>
-										<p>I'm here to help.</p>
-									</div>
-									<div class="text__name">Postma Elena</div>
-									<div class="text__logo">
-										<a href="#" class="text__link">
-											<img src="img/icons/facebook.png" alt="facebook">
-										</a>
-										<a href="#" class="text__link">
-											<img src="img/icons/layer-28-copy-4.png" alt="instagram">
-										</a>
-									</div>
-									<div class="text__email">
-										e-mail: <a href="mailto:postma.elena@gmail.com"><span>postma.elena@gmail.com</span></a>
-									</div>
+									<div class="item__title">MARKETING</div>
+									<div class="item__text">We’ll help you establish the right goals
+										and build the right paths. Success depends
+										on setting the right intention.</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<footer class="footer">
+			<div class="portfolio">
 				<div class="container">
-					<div class="footer__body">
-						<a href="#" class="footer__logo">
-							<img src="img/footer/layer-33-copy-3.png" alt="Binary__logo">
-						</a>
-						<div class="footer__menu">
-							<ul class="footer__items">
-								<li class="footer__item"><a href="#" class="footer__link">Home</a></li>
-								<li class="footer__item"><a href="#" class="footer__link">Facebook</a></li>
-								<li class="footer__item"><a href="#" class="footer__link">Linkedin</a></li>
-								<li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
-							</ul>
+					<div class="portfolio__body">
+						<div class="portfolio__header">
+							<div class="portfolio__title title">PORTFOLIO</div>
+							<nav class="portfolio__menu ">
+								<ul class="menu__items filter">
+									<li data-filter="1" class="menu__item active">ALL</li>
+									<li data-filter="2" class="menu__item">WEB</li>
+									<li data-filter="3" class="menu__item">APPS</li>
+									<li data-filter="4" class="menu__item">OTHER</li>
+								</ul>
+							</nav>
 						</div>
-						<div class="footer__text">© 2015. All Rights Reserved </div>
+						<div class="portfolio__items">
+							<div class="portfolio__column f_2">
+								<a class="portfolio__item">
+									<img src="img/portfolio/background.png" alt="portfolio__item">
+								</a>
+							</div>
+							<div class="portfolio__column f_2">
+								<a class="portfolio__item">
+									<img src="img/portfolio/background.png" alt="portfolio__item">
+								</a>
+							</div>
+							<div class="portfolio__column f_2">
+								<a class="portfolio__item">
+									<img src="img/portfolio/background.png" alt="portfolio__item">
+								</a>
+							</div>
+							<div class="portfolio__column f_3">
+								<a class="portfolio__item">
+									<img src="img/portfolio/background.png" alt="portfolio__item">
+								</a>
+							</div>
+							<div class="portfolio__column f_4">
+								<a class="portfolio__item">
+									<img src="img/portfolio/background.png" alt="portfolio__item">
+								</a>
+							</div>
+							<div class="portfolio__column f_4">
+								<a class="portfolio__item">
+									<img src="img/portfolio/background.png" alt="portfolio__item">
+								</a>
+							</div>
+							<div class="portfolio__column f_4">
+								<a class="portfolio__item">
+									<img src="img/portfolio/background.png" alt="portfolio__item">
+								</a>
+							</div>
+							<div class="portfolio__column f_4">
+								<a class="portfolio__item">
+									<img src="img/portfolio/background.png" alt="portfolio__item">
+								</a>
+							</div>
+						</div>
+						<div class="portfolio__footer">
+							<a href="#" class="portfolio__btn btn btn_bl">READ MORE</a>
+						</div>
 					</div>
 				</div>
-			</footer>
+			</div>
+			<div class="partners">
+				<div class="container">
+					<div class="partners__body">
+						<div class="partners__title">Our partners</div>
+						<div class="partners__company">
+							<a href="#" class="partners__logo">
+								<img src="img/partners/logo-2.png" alt="">
+							</a>
+							<a href="#" class="partners__logo">
+								<img src="img/partners/archiq.png" alt="">
+							</a>
+							<a href="#" class="partners__logo">
+								<img src="img/partners/thomsoon.png" alt="">
+							</a>
+							<a href="#" class="partners__logo">
+								<img src="img/partners/alex.png" alt="">
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="contact">
+				<div class="container">
+					<div class="contact__body">
+						<div class="contact__title title">CONTACT</div>
+						<div class="contact__content">
+							<form class="form" action="#" id="form">
+								<div class="form__name form__input">
+									<p class="form__text">YOUR NAME</p>
+									<input autocomplete="off" tabindex="1" name="form[]" data-value="" type="text" id="formName"
+										class="input-main _req" />
+								</div>
+								<div class="form__email form__input">
+									<p class="form__text">YOUR E-MAIL</p>
+									<input autocomplete="off" tabindex="2" name="form[]" data-value="" type="text" id="formEmail"
+										class="input-main _req _email" />
+								</div>
+								<div class="form__message">
+									<p class="form__text">MESSAGE</p>
+									<textarea tabindex="3" name="message" id="formMessage"></textarea>
+								</div>
+								<div class="form__container">
+									<div class="form__photo form__item">
+										<div class="form__text">ATTACH A PHOTO</div>
+										<div class="file">
+											<div class="file__item">
+												<input id="formImage" accept=".jpg, .png, .gif" type="file" name="image"
+													class="file__input">
+												<div class="file__button"><span>Choose</span></div>
+											</div>
+											<div id="formPreview" class="file__preview"></div>
+										</div>
+									</div>
+									<div class="form__item">
+										<div class="checkbox">
+											<input id="formAgreement" checked type="checkbox" name="agreement"
+												class="checkbox__input _req">
+											<label for="formAgreement" class="checkbox__label"><span>Я даю своё согласие на
+													обработку
+													персональных данных в соответствии с <a href="#">Условиями</a>*</span></label>
+										</div>
+									</div>
+								</div>
+								<div class="form__send">
+									<button tabindex="4" type="submit" class="btn btn_bl">SEND</button>
+								</div>
+							</form>
+							<div class="contact__text">
+								<div class="text__idea">
+									<p>Have an idea for a project? Just looking to
+										explore and see the possibilities?</p>
+									<p>I'm here to help.</p>
+								</div>
+								<div class="text__name">Postma Elena</div>
+								<div class="text__logo">
+									<a href="#" class="text__link">
+										<img src="img/icons/facebook.png" alt="facebook">
+									</a>
+									<a href="#" class="text__link">
+										<img src="img/icons/layer-28-copy-4.png" alt="instagram">
+									</a>
+								</div>
+								<div class="text__email">
+									e-mail: <a href="mailto:postma.elena@gmail.com"><span>postma.elena@gmail.com</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script src="js/script.js"></script>
-	</body>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__body">
+					<a href="#" class="footer__logo">
+						<img src="img/footer/layer-33-copy-3.png" alt="Binary__logo">
+					</a>
+					<div class="footer__menu">
+						<ul class="footer__items">
+							<li class="footer__item"><a href="#" class="footer__link">Home</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Facebook</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Linkedin</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+						</ul>
+					</div>
+					<div class="footer__text">© 2015. All Rights Reserved </div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
 </html>
