@@ -1,0 +1,160 @@
+//<МИКСИНЫ>
+@mixin flexbox() {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	font-size: 0;
+}
+@mixin flexboxinline() {
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;
+}
+
+//</МИКСИНЫ>
+
+.wrapper {
+	@include flexbox();
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	&._lock {
+		overflow: hidden;
+	}
+}
+
+.container {
+	max-width: 1100px;
+	@include flexbox();
+	justify-content: center;
+	align-items: center;
+}
+
+.btn {
+	position: relative;
+	display: block;
+	font-size: 15.5px;
+	padding: 0px 42px;
+	height: 47px;
+	line-height: 44px;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 0.6px;
+	overflow: hidden;
+	transition: 1s all ease;
+	&_w {
+		color: white;
+		border: solid 1px white;
+		z-index: 2;
+		&:hover {
+			color: black;
+		}
+		&::before {
+			background: #fff;
+		}
+	}
+	&_bl {
+		border: solid 1px #000;
+		color: #000;
+		z-index: 2;
+		&:hover {
+			color: #fff;
+		}
+		&::before {
+			background: #000;
+		}
+	}
+	&_w,
+	&_bl {
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: -1;
+			transition: all 0.6s ease;
+			width: 100%;
+			height: 0%;
+			transform: translate(-50%, -50%) rotate(45deg);
+		}
+		&:hover::before {
+			height: 380%;
+		}
+	}
+}
+
+.title {
+	font-size: 34px;
+	font-weight: bold;
+	letter-spacing: 5.44px;
+	color: #000;
+	position: relative;
+	text-transform: uppercase;
+	line-height: 1.18;
+	padding: 0px 0px 30px 0px;
+	transition: all 0.7s;
+	&:after {
+		content: "";
+		width: 81px;
+		height: 1px;
+		background-color: #000;
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		margin: 0 0 0 -45px;
+		transition: all 0.7s;
+	}
+	@media screen and (max-width: 630px) {
+		font-size: 25px;
+	}
+}
+
+._dark-theme {
+	.title {
+		color: #fff;
+		transition: all 0.7s;
+		&::after {
+			background: #fff;
+			transition: all 0.7s;
+		}
+	}
+	.btn_bl {
+		color: white;
+		border: solid 1px white;
+	}
+	input,
+	textarea {
+		background-color: rgb(133, 132, 132);
+		border-top: solid 1px #fff;
+		transition: all 0.7s;
+		color: #fff;
+	}
+	.btn {
+		&_w {
+			color: #1e1e1e;
+			border: solid 1px #1e1e1e;
+			&:hover {
+				color: #fff;
+			}
+			&::before {
+				background: #1e1e1e;
+			}
+		}
+		&_bl {
+			&:hover {
+				color: #1e1e1e;
+			}
+			&::before {
+				background: #fff;
+			}
+		}
+	}
+}
